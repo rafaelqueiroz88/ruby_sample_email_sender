@@ -2,14 +2,16 @@
 
 Put your configuration in .env file
 
-Run:
+Install pony gem and dotenv gem:
 
 gem install pony
 gem install dotenv
 
-Once everything is setup, run
+Once everything is setup, and all gems were install run
 
-ruby sender.rb and follow instructions
+$ ruby sender.rb 
+
+Then follow instructions
 
 Expected output:
 

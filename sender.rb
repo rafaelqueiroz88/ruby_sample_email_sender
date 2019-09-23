@@ -15,4 +15,6 @@ puts "Message: "
 message = gets.chomp
 sender.set_message message
 
-sender.send_email
+if sender.send_email
+  puts "E-mail sent!"
+end
