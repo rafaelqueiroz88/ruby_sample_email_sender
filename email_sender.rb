@@ -23,17 +23,17 @@ class EmailSenderModule
 
   def send_email
     Pony.mail(
-      :to             => @to_address,
+      :to             => @to_address.to_s,
       :via            => :smtp,
       :subject        => @subject,
       :body           => @message,
       :via_options    => {
-        :user_name      => @setup[0],
-        :password       => @setup[1],
-        :address        => @setup[2],
-        :port           => @setup[3],
-        :authentication => :plain,
-        :domain         => @setup[4]
+          :address        => @setup[2],
+          :port           => @setup[3],
+          :user_name      => @setup[0],
+          :password       => @setup[1],
+          :authentication => :plain,
+          :domain         => @setup[4]
       }
     )
   end
