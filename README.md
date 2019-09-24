@@ -16,3 +16,16 @@ Then follow instructions
 Expected output:
 
 $ Email sent!
+
+<h2>Bundler</h2>
+
+List your local gems with:
+
+gem list
+
+And look for bundler
+If bundler is not installed, run the follow command:
+
+gem install bundler
+
+Then, run bundle install to install gems listed in Gemfile
